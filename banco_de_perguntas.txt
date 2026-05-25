@@ -1,0 +1,247 @@
+1.
+Qual é a principal característica do Firewall Físico em relação aos recursos?
+ A) Compartilhado
+ B) Dedicado
+ C) Virtual
+ Resposta: B
+
+2.
+Onde o firewall físico é instalado na rede?
+ A) Rede
+ B) Celular
+ C) Impressora
+ Resposta: A
+
+3.
+Como o firewall atua no tráfego corporativo?
+ A) Backup
+ B) Proteção
+ C) Formatação
+ Resposta: B
+
+4.
+O que significa “Hardware Dedicado” no firewall físico?
+ A) Compartilhado
+ B) Exclusivo
+ C) Doméstico
+ Resposta: B
+
+5.
+O que a filtragem de tráfego faz no firewall?
+ A) Inspeção
+ B) Download
+ C) Impressão
+ Resposta: A
+
+6.
+Qual a função da barreira de proteção do firewall?
+ A) Invasões
+ B) Música
+ C) Jogos
+ Resposta: A
+
+7.
+Quais mecanismos fazem parte do funcionamento técnico do firewall?
+ A) DHCP
+ B) Stateful
+ C) Bluetooth
+ Resposta: B
+
+8.
+Em quantas camadas o firewall analisa os pacotes?
+ A) Única
+ B) Múltiplas
+ C) Nenhuma
+ Resposta: B
+
+9.
+O que o firewall faz ao analisar um pacote de dados?
+ A) Validação
+ B) Impressão
+ C) Exclusão
+ Resposta: A
+
+10.
+Qual é o objetivo da inspeção Stateful?
+ A) Conexões
+ B) Música
+ C) Vídeos
+ Resposta: A
+
+11.
+Qual característica destaca a linha Cisco ASA Series?
+ A) VPN
+ B) Jogos
+ C) Wi-Fi
+ Resposta: A
+
+12.
+Para quais aplicações o Cisco ASA é indicado?
+ A) Residências
+ B) Corporações
+ C) Escolas
+ Resposta: B
+
+13.
+Como a linha Cisco ASA é descrita no slide?
+ A) Referência
+ B) Simples
+ C) Antiga
+ Resposta: A
+
+14.
+Qual é a linha de firewall da Fortinet?
+ A) ASA
+ B) FortiGate
+ C) PA-Series
+ Resposta: B
+
+15.
+Quais recursos técnicos destacam a Fortinet?
+ A) Sandboxing
+ B) Impressão
+ C) Jogos
+ Resposta: A
+
+16.
+O que mais se destaca na linha FortiGate?
+ A) Equilíbrio
+ B) Lentidão
+ C) Simplicidade
+ Resposta: A
+
+17.
+Qual linha pertence à Palo Alto Networks?
+ A) PA-Series
+ B) ASA
+ C) FortiGate
+ Resposta: A
+
+18.
+Qual característica técnica define a Palo Alto?
+ A) Inteligência
+ B) Wi-Fi
+ C) Backup
+ Resposta: A
+
+19.
+Como a linha Palo Alto PA é definida?
+ A) NGFW
+ B) Antivírus
+ C) Roteador
+ Resposta: A
+
+20.
+Para quais empresas Fortinet e Palo Alto são indicadas?
+ A) Médias
+ B) Domésticas
+ C) Escolares
+ Resposta: A
+
+21.
+Quantos usuários existem no caso de uso apresentado?
+ A) 100
+ B) 300
+ C) 50
+ Resposta: B
+
+22.
+Qual modelo Fortinet foi usado no caso real?
+ A) PA-220
+ B) 100F
+ C) ASA 5500
+ Resposta: B
+
+23.
+O que o firewall separa no caso prático?
+ A) DMZ
+ B) Bluetooth
+ C) Impressoras
+ Resposta: A
+
+24.
+Qual tipo de acesso público é permitido na DMZ?
+ A) HTTPS
+ B) FTP
+ C) Bluetooth
+ Resposta: A
+
+25.
+Qual é a regra para o tráfego WAN → DMZ?
+ A) Bloquear
+ B) Permitir
+ C) Ignorar
+ Resposta: B
+
+26.
+Quais protocolos são usados de WAN para DMZ?
+ A) HTTP/HTTPS
+ B) USB
+ C) VGA
+ Resposta: A
+
+27.
+Qual regra é aplicada de WAN para LAN?
+ A) Permitir
+ B) Bloquear
+ C) Liberar
+ Resposta: B
+
+28.
+Como é configurado o tráfego de LAN para DMZ?
+ A) Permitir
+ B) Bloquear
+ C) Ignorar
+ Resposta: A
+
+29.
+Qual é a regra para comunicação LAN → LAN?
+ A) Todos
+ B) Nenhum
+ C) Limitado
+ Resposta: A
+
+30.
+Qual foi o resultado final após aplicar as regras?
+ A) Lentidão
+ B) Segurança
+ C) Falha
+ Resposta: B
+
+31.
+Qual é a principal vantagem técnica do firewall físico?
+ A) Desempenho
+ B) Jogos
+ C) Impressão
+ Resposta: A
+
+32.
+Qual é a principal desvantagem do firewall físico?
+ A) Velocidade
+ B) Custo
+ C) Wi-Fi
+ Resposta: B
+
+33.
+O que significa “single point of failure”?
+ A) Dependência
+ B) Segurança
+ C) Rapidez
+ Resposta: A
+
+34.
+O que o firewall físico representa na rede corporativa?
+ A) Defesa
+ B) Impressora
+ C) Armazenamento
+ Resposta: A
+
+35.
+O que destacam os tópicos de proteção ativa e escalabilidade?
+ A) Monitoramento
+ B) Jogos
+ C) Música
+ Resposta: A
+
+
+
