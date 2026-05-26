@@ -298,7 +298,14 @@
       font-size: clamp(1.05rem, 2vw, 1.55rem);
       font-weight: 750;
       line-height: 1.25;
+      cursor: pointer;
       transition: border-color 0.22s ease, background 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .alternative:hover:not(.is-selected) {
+      background: #f0f4f9;
+      border-color: var(--primary);
+      transform: translateY(-2px);
     }
 
     .alternative.is-correct {
@@ -306,6 +313,16 @@
       background: var(--accent-soft);
       box-shadow: 0 16px 34px rgba(16, 163, 127, 0.18);
       transform: translateY(-2px);
+    }
+
+    .alternative.is-wrong {
+      border-color: rgba(180, 35, 24, 0.75);
+      background: rgba(180, 35, 24, 0.08);
+      box-shadow: 0 16px 34px rgba(180, 35, 24, 0.12);
+    }
+
+    .alternative.is-selected {
+      cursor: not-allowed;
     }
 
     .answer-box {
@@ -475,7 +492,8 @@
       questions: [],
       usedIds: new Set(),
       currentQuestion: null,
-      answerVisible: false
+      answerVisible: false,
+      answered: false
     };
 
     const elements = {
@@ -530,6 +548,7 @@
       state.usedIds.clear();
       state.currentQuestion = null;
       state.answerVisible = false;
+      state.answered = false;
       elements.loadNotice.classList.remove("is-visible");
       renderQuestionButtons();
       updateCounters();
@@ -647,6 +666,7 @@
 
       state.currentQuestion = question;
       state.answerVisible = false;
+      state.answered = false;
       state.usedIds.add(question.id);
 
       elements.questionMeta.textContent = `Pergunta ${question.id}`;
@@ -668,6 +688,8 @@
         item.className = "alternative";
         item.textContent = alternative;
         item.dataset.answer = alternative === question.resposta ? "true" : "false";
+        item.dataset.correct = question.resposta;
+        item.addEventListener("click", handleAlternativeClick);
         elements.alternatives.appendChild(item);
       });
     }
@@ -685,6 +707,34 @@
           item.classList.add("is-correct");
         }
       });
+    }
+
+    function handleAlternativeClick(event) {
+      if (!state.currentQuestion || state.answered) return;
+
+      const clickedAlternative = event.currentTarget;
+      const allAlternatives = document.querySelectorAll(".alternative");
+
+      state.answered = true;
+
+      const isCorrect = clickedAlternative.dataset.answer === "true";
+      const correctAnswer = clickedAlternative.dataset.correct;
+
+      allAlternatives.forEach((alt) => {
+        alt.classList.add("is-selected");
+      });
+
+      if (isCorrect) {
+        clickedAlternative.classList.add("is-correct");
+      } else {
+        clickedAlternative.classList.add("is-wrong");
+        
+        allAlternatives.forEach((alt) => {
+          if (alt.dataset.correct === correctAnswer && alt !== clickedAlternative) {
+            alt.classList.add("is-correct");
+          }
+        });
+      }
     }
 
     function showQuestion() {
