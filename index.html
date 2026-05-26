@@ -713,26 +713,17 @@
       if (!state.currentQuestion || state.answered) return;
 
       const clickedAlternative = event.currentTarget;
-      const allAlternatives = document.querySelectorAll(".alternative");
-
-      state.answered = true;
-
       const isCorrect = clickedAlternative.dataset.answer === "true";
 
-      allAlternatives.forEach((alt) => {
-        alt.classList.add("is-selected");
-      });
-
       if (isCorrect) {
+        state.answered = true;
         clickedAlternative.classList.add("is-correct");
+        
+        document.querySelectorAll(".alternative").forEach((alt) => {
+          alt.classList.add("is-selected");
+        });
       } else {
         clickedAlternative.classList.add("is-wrong");
-        
-        allAlternatives.forEach((alt) => {
-          if (alt.dataset.answer === "true" && alt !== clickedAlternative) {
-            alt.classList.add("is-correct");
-          }
-        });
       }
     }
 
