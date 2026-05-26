@@ -718,7 +718,6 @@
       state.answered = true;
 
       const isCorrect = clickedAlternative.dataset.answer === "true";
-      const correctAnswer = clickedAlternative.dataset.correct;
 
       allAlternatives.forEach((alt) => {
         alt.classList.add("is-selected");
@@ -730,7 +729,7 @@
         clickedAlternative.classList.add("is-wrong");
         
         allAlternatives.forEach((alt) => {
-          if (alt.dataset.correct === correctAnswer && alt !== clickedAlternative) {
+          if (alt.dataset.answer === "true" && alt !== clickedAlternative) {
             alt.classList.add("is-correct");
           }
         });
